@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Modules */
+    "target": "es2020",                                  
+    "module": "CommonJS",                                
+    "rootDir": "./api",   
+    "baseUrl": "./api",  
+    "allowJs": true,    
+
+    "paths": {
+      "@entities/*": ["1-entities/*"],
+      "@usecases/*": ["2-usecases/_boundaries/*"],
+      "@adapter/*": ["3-interface-adapters/_boundaries/*"],
+      "@plugins/*": ["4-plugins/_boundaries/*"],
+
+      "@usecase-factories/*": ["2-usecases/_factories/*"],
+      "@adapter-factories/*": ["3-interface-adapters/_factories/*"],
+
+      "@usecases-internal/*": ["2-usecases/*"],
+      "@adapter-internal/*": ["3-interface-adapters/*"],
+      "@plugins-internal/*": ["4-plugins/*"],
+    },
+    
+    "outDir": "./dist",                                  
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                      
+    "skipLibCheck": true, 
+    "noImplicitAny": false,                              
+  }
+}

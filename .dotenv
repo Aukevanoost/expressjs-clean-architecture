@@ -1,0 +1,6 @@
+PORT=3000
+JWT_PRIVATE_KEY=<your-personal-jwt-private-key>
+NEO4J_USER=neo4j
+RECORD_FETCH_HARD_LIMIT=50
+NEO4J_PASSWORD=spaghetti-code
+NEO4J_URI=bolt://127.0.0.1:7687
